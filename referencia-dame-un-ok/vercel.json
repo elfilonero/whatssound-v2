@@ -1,0 +1,9 @@
+{
+  "buildCommand": "rm -rf .next node_modules/.cache && next build",
+  "crons": [
+    {
+      "path": "/api/cron/check-alerts",
+      "schedule": "0 8 * * *"
+    }
+  ]
+}

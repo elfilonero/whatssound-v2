@@ -1,0 +1,5 @@
+import '@testing-library/jest-dom'
+
+// Provide dummy env vars so supabase client doesn't crash during tests
+process.env.NEXT_PUBLIC_SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://test.supabase.co'
+process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'test-anon-key'
